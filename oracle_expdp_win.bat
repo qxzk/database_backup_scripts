@@ -1,3 +1,11 @@
+@REM 名称：oracle_expdp_win.bat
+@REM 作者：xzqv
+@REM 描述：用于Windows Server系统上的Oracle数据库备份，
+@REM 在是使用脚本前需要在Oracle数据库中创建directory，
+@REM 创建directory的方法如下：
+@REM CONN / AS SYSDBA
+@REM CREATE OR REPLACE DIRECTORY DMPDIR AS '服务器实际存放备份数据的绝对路径';
+@REM GRANT READ, WRITE ON DIRECTORY DMPDIR TO public;
 
 @echo off
 
@@ -44,4 +52,4 @@ expdp %USERNAME%/%PASSWORD%@%INSTANCE_NAME% directory=%ORACLE_DIRECTORY% dumpfil
 @REM 备份指定的用户（schema）数据
 @REM expdp %USERNAME%/%PASSWORD%@%INSTANCE_NAME% directory=%ORACLE_DIRECTORY% dumpfile=%INSTANCE_NAME%-%SCHEMA_NAME%-%BACKUP_DATE%%BACKUP_TIME2%.dmp logfile=%INSTANCE_NAME%-%SCHEMA_NAME%-%BACKUP_DATE%%BACKUP_TIME2%.log schemas=%SCHEMA_NAME%
 
-@echo %INSTANCE_NAME=xzqv%数据库备份已完成。
+@echo %INSTANCE_NAME%数据库备份已完成。
