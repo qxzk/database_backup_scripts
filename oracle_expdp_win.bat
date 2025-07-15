@@ -49,7 +49,7 @@ set BACKUP_TIME3=%time:~0,2%%time:~3,2%%time:~6,2%
 @REM 备份全库数据，包括所有用户（Schema）、表空间、表、索引、存储过程等元数据和数据
 expdp %USERNAME%/%PASSWORD%@%INSTANCE_NAME% directory=%ORACLE_DIRECTORY% dumpfile=%INSTANCE_NAME%-full-%BACKUP_DATE%%BACKUP_TIME2%.dmp logfile=%INSTANCE_NAME%-full-%BACKUP_DATE%%BACKUP_TIME2%.log full=y
 
-@REM 备份指定的用户（schema）数据
+@REM 备份指定的用户（Schema）数据
 @REM expdp %USERNAME%/%PASSWORD%@%INSTANCE_NAME% directory=%ORACLE_DIRECTORY% dumpfile=%INSTANCE_NAME%-%SCHEMA_NAME%-%BACKUP_DATE%%BACKUP_TIME2%.dmp logfile=%INSTANCE_NAME%-%SCHEMA_NAME%-%BACKUP_DATE%%BACKUP_TIME2%.log schemas=%SCHEMA_NAME%
 
 @echo %INSTANCE_NAME%数据库备份已完成。
