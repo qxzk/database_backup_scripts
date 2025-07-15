@@ -33,17 +33,17 @@ set BACKUP_DATE=%date:~0,4%%date:~5,2%%date:~8,2%
 
 @REM 设置备份文件和备份日志调用的时间-时
 @REM 时间格式：145058，表示14点
-@REM 一天有多次备份需求，把这个参数添加到%BACKUP_DATE%的后面
+@REM 小时级备份，把这个参数添加到%BACKUP_DATE%后面
 set BACKUP_TIME1=%time:~0,2%
 
 @REM 设置备份文件和备份日志调用的时间-时分
 @REM 时间格式：145058，表示14点50分
-@REM 一天有多次备份需求，把这个参数添加到%BACKUP_DATE%的后面
+@REM 分钟级备份，把这个参数添加到%BACKUP_DATE%后面
 set BACKUP_TIME2=%time:~0,2%%time:~3,2%
 
 @REM 设置备份文件和备份日志调用的时间-时分秒
 @REM 时间格式：145058，表示14点50分58秒
-@REM 一天有多次备份需求，把这个参数添加到%BACKUP_DATE%的后面
+@REM 秒级备份，把这个参数添加到%BACKUP_DATE%后面
 set BACKUP_TIME3=%time:~0,2%%time:~3,2%%time:~6,2%
 
 @REM 备份全库数据，包括所有用户（Schema）、表空间、表、索引、存储过程等元数据和数据
