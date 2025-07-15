@@ -4,16 +4,16 @@
 set NLS_LANG=AMERICAN_AMERICA.UTF8
 
 @REM 设置所需备份数据的用户名
-set USERNAME=orduser
+set USERNAME=oe
 
 @REM 设置所需要备份数据的用户密码
-set PASSWORD=orduser
+set PASSWORD=oe
 
 @REM 设置Oracle数据库的实例名称
 set INSTANCE_NAME=xzqv
 
 @REM 设置导出数据schema的名称
-@REM set SCHEMA_NAME=HR
+@REM set SCHEMA_NAME=oe
 
 @REM 设置Oracle数据库指定的数据导出目录
 set ORACLE_DIRECTORY=DMPDIR
