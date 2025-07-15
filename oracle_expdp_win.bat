@@ -3,9 +3,9 @@
 @REM 描述：用于Windows Server系统上的Oracle数据库备份，
 @REM 在是使用脚本前需要在Oracle数据库中创建directory，
 @REM 创建directory的方法如下：
-@REM CONN / AS SYSDBA
-@REM CREATE OR REPLACE DIRECTORY DMPDIR AS '服务器实际存放备份数据的绝对路径';
-@REM GRANT READ, WRITE ON DIRECTORY DMPDIR TO public;
+@REM sqlplus / as sysdba
+@REM create or replace directory DMPDIR as '服务器实际存放备份数据的绝对路径';
+@REM grant read, write on directory DMPDIR to public;
 
 @echo off
 
