@@ -1,5 +1,5 @@
 @REM 名称：oracle_expdp_win.bat
-@REM 作者：qxzk
+@REM 作者：xkdi
 @REM 描述：用于Windows Server系统上Oracle数据库备份，
 @REM 在使用脚本前需要在Oracle数据库中创建directory，
 @REM 创建directory的方法如下：
